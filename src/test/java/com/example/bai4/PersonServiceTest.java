@@ -22,6 +22,13 @@ class PersonServiceTest {
         Assertions.assertThrows(IllegalArgumentException.class,()->personService.add(person1));
     }
     @Test
+
+    public void testL3(){
+        Person person1 = new Person("1", "Hải", 23, 0, 12, "Học");
+        Assertions.assertThrows(IllegalArgumentException.class,()->personService.add(person1));
+    }
+    @Test
+
     public void testL1(){
         Person person2 = new Person("1", "Hải", -1, 23, 12, "Học");
         Assertions.assertThrows(IllegalArgumentException.class,()->personService.add(person2));
