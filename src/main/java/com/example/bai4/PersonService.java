@@ -5,7 +5,7 @@ import java.util.List;
 
 public class PersonService {
     private List<Person> list = new ArrayList<>();
-
+//cscx
     // isblank : check trong, null, khoảng cách
     public String add(Person person) {
         if (person.getSalary() <= 0 || person.getSalary() > 200000000) {
